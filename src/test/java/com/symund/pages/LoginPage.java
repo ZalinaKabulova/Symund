@@ -21,6 +21,17 @@ public class LoginPage {
     @FindBy(id = "submit-form")
     public WebElement loginBtn;
 
+    @FindBy(xpath = "//span[@title='Zalina']")
+    public WebElement usernameOnDashboard;
+
+    @FindBy(xpath = "//div[@class='avatardiv avatardiv-shown']")
+    public WebElement username1OnDashboard;
+
+
+
+
+
+
 
 
 }
