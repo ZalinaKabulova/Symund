@@ -1,11 +1,14 @@
 package com.symund.pages;
 
+import com.github.javafaker.Faker;
 import com.symund.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 public class LoginPage {
+
+    Faker faker = new Faker();
 
     public LoginPage(){
 
@@ -26,6 +29,22 @@ public class LoginPage {
 
     @FindBy(xpath = "//div[@class='avatardiv avatardiv-shown']")
     public WebElement username1OnDashboard;
+
+    public String fakeUsername = faker.numerify("Employee/###");
+    public String fakePassword = faker.name().nameWithMiddle();
+
+
+    @FindBy (xpath = "//p[@class= 'warning wrongPasswordMsg']")
+    public WebElement  wrongUsernameAndPassword;
+
+
+
+    @FindBy (xpath = "//img[@alt='Toggle password visibility']")
+    public WebElement togglePassword;
+
+
+
+
 
 
 
