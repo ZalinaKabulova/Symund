@@ -38,9 +38,22 @@ public class LoginPage {
     public WebElement  wrongUsernameAndPassword;
 
 
+    @FindBy (xpath = "//img[@alt= 'Toggle password visibility']")
+    public WebElement  togglePassword;
 
-    @FindBy (xpath = "//img[@alt='Toggle password visibility']")
-    public WebElement togglePassword;
+    @FindBy (id = "lost-password")
+    public WebElement  forgotPasswordBtn;
+
+    @FindBy (id = "reset-password-submit")
+    public WebElement  resetPassword;
+
+    @FindBy (xpath = "//input[@placeholder='Username or email']")
+    public WebElement  usernamePlaceholder;
+
+
+    @FindBy (xpath = "//input[@placeholder='Password']")
+    public WebElement  passwordPlaceholder;
+
 
 
 

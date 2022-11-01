@@ -98,12 +98,18 @@ public class LoginStep_definitions {
     @Then("The user see the password in form of dots by default")
     public void the_user_see_the_password_in_form_of_dots_by_default() {
 
-        loginPage.togglePassword.isDisplayed();
+        Assert.assertEquals("password", loginPage.passwordBtn.getAttribute("type"));
+        System.out.println("loginPage.passwordBtn.getAttribute(\"type\") = " + loginPage.passwordBtn.getAttribute("type"));
     }
 
     @Then("The user see the password explicitly")
     public void the_user_see_the_password_explicitly() {
+
         loginPage.togglePassword.click();
+
+
+        Assert.assertEquals("text", loginPage.passwordBtn.getAttribute("type"));
+        System.out.println("loginPage.passwordBtn.getAttribute(\"type\") = " + loginPage.passwordBtn.getAttribute("type"));
 
     }
 
@@ -125,6 +131,36 @@ public class LoginStep_definitions {
         Assert.assertEquals("Please fill out this field.",loginPage.
                 usernameBtn.getAttribute("validationMessage"));
     }
+
+
+    @When("The user see Forgot password")
+    public void the_user_see_forgot_password() {
+
+        Assert.assertTrue(loginPage.forgotPasswordBtn.isDisplayed());
+
+        System.out.println("loginPage.forgotPasswordBtn.isDisplayed() = " + loginPage.forgotPasswordBtn.isDisplayed());
+    }
+    @When("The user clicks on Forgot passwort field")
+    public void the_user_clicks_on_forgot_passwort_field() {
+
+        loginPage.forgotPasswordBtn.click();
+    }
+    @Then("The user see Reset password field on the next page")
+    public void the_user_see_reset_password_field_on_the_next_page() {
+
+        Assert.assertTrue(loginPage.resetPassword.isDisplayed());
+
+        System.out.println("loginPage.resetPassword.isDisplayed() = " + loginPage.resetPassword.isDisplayed());
+
+    }
+
+    @Then("The user see placeholders on Username and Password fields")
+    public void the_user_see_placeholders_on_username_and_password_fields() {
+
+        Assert.assertTrue(loginPage.usernamePlaceholder.isDisplayed());
+        Assert.assertTrue(loginPage.passwordPlaceholder.isDisplayed());
+    }
+
 
 
 }
