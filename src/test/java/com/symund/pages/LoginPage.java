@@ -54,6 +54,8 @@ public class LoginPage {
     @FindBy (xpath = "//input[@placeholder='Password']")
     public WebElement  passwordPlaceholder;
 
+    @FindBy(xpath = "//img[@src='/core/img/actions/logout.svg?v=b8729556']")
+    public WebElement logoutBtn;
 
 
 
