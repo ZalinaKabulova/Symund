@@ -1,6 +1,6 @@
-package com.symund.step_definitions;
+package com.Symund.step_definitions;
 
-import com.symund.utilities.Driver;
+import com.Symund.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Scenario;
 import org.openqa.selenium.OutputType;

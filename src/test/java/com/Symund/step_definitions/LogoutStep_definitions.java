@@ -1,8 +1,8 @@
-package com.symund.step_definitions;
+package com.Symund.step_definitions;
 
-import com.symund.pages.LoginPage;
-import com.symund.utilities.ConfigurationReader;
-import com.symund.utilities.Driver;
+import com.Symund.pages.LoginPage;
+import com.Symund.utilities.ConfigurationReader;
+import com.Symund.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;

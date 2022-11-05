@@ -1,4 +1,4 @@
-package com.symund.utilities;
+package com.Symund.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

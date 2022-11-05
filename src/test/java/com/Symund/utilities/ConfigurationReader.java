@@ -1,4 +1,4 @@
-package com.symund.utilities;
+package com.Symund.utilities;
 
 import java.io.FileInputStream;
 import java.io.IOException;

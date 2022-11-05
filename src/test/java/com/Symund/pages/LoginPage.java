@@ -1,7 +1,7 @@
-package com.symund.pages;
+package com.Symund.pages;
 
 import com.github.javafaker.Faker;
-import com.symund.utilities.Driver;
+import com.Symund.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;

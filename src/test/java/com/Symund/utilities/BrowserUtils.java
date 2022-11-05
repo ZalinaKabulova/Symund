@@ -1,4 +1,4 @@
-package com.symund.utilities;
+package com.Symund.utilities;
 
 import org.junit.Assert;
 import org.openqa.selenium.*;
